@@ -1,0 +1,75 @@
+/* Banner */
+#frontpage-banner-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#frontpage-banner-wrapper img {
+    position: absolute;
+    display: block;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    transform: scale(1.1);
+}
+
+#frontpage-banner-text-block {
+    top: 65%;
+    right: 60%;
+    max-width: 100%;
+    padding: 1.5em;
+    position: absolute;
+    text-align: center;
+    background: rgb(255, 255, 255);
+}
+
+#frontpage-banner-text-block .frontpage-banner-text-content {
+    text-align: left;
+    font-weight: normal;
+    color: rgb(34, 34, 34);
+}
+
+/*Banner Text Style*/
+#frontpage-banner-text-block .frontpage-banner-text-content .title {
+    color: rgb(93, 93, 93);
+    font-size: 1.625em;
+    font-weight: 700;
+    font-style: bold;
+}
+
+#frontpage-banner-text-block .frontpage-banner-text-content .subtitle::before {
+    font-family: Arial;
+    content: "\201C";
+    font-size: 1em;
+}
+
+#frontpage-banner-text-block .frontpage-banner-text-content .subtitle::after {
+    font-family: Arial;
+    content: "\201C";
+    font-size: 1em;
+}
+
+
+#frontpage-banner-text-block .frontpage-banner-text-content .subtitle {
+    font-style: italic;
+    margin-top: 1em;
+}
+
+#frontpage-banner-text-block .frontpage-banner-text-content .source {
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 0.3em;
+    color: rgb(93, 93, 93);
+}
+
+#frontpage-banner-text-block .frontpage-banner-text-content .buy-now {
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: 0.125em solid black;
+    padding-bottom: 0.3125em;
+    margin-top: 2em;
+}
+
+#frontpage-banner-text-block .frontpage-banner-text-content .buy-now:hover {
+    cursor: pointer;
+}
