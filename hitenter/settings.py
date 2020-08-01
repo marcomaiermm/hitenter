@@ -28,7 +28,7 @@ SECRET_KEY = 'znprl8jaeyw_$5!ub+k^13&9z1z&1fx!m1qbbqn-6c((ogsh@!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -81,6 +81,15 @@ WSGI_APPLICATION = 'hitenter.wsgi.application'
 
 DATABASES = {
     'default': {
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'db',
+        'USER': 'marco',
+        'PASSWORD': 'qjvb6pld',
+        'HOST': '192.168.0.164',
+        'PORT': '5432',
+    },
+    'sqlite3': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
